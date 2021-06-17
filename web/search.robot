@@ -1,6 +1,6 @@
 *** Settings ***
 Library         SeleniumLibrary
-Resource        ../web/resource.robot
+Resource        resource.robot
 
 
 *** Variables ***
@@ -8,7 +8,7 @@ Resource        ../web/resource.robot
 
 *** Test Cases ***
 Cenário: Buscar Rick and Morty e acessar a página
-    Abrir   navegador
+    Abrir navegador
     Digitar "Rick and Morty" na busca
     Confirmar se a busca retorna o resultado buscado
     Clique no primeiro "link"
